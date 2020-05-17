@@ -902,6 +902,14 @@ a:hover {
   letter-spacing: .1px;
   margin-bottom: 0;
 }
+.category-bawa {
+  color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: .7rem;
+  letter-spacing: .1px;
+  margin-bottom: 0;
+}
 
 .card-blog .card-title {
   font-size: 1.3rem;
