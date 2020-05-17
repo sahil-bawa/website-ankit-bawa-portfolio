@@ -1,7 +1,6 @@
 <?php
 $errors  = '';
-//$myemail = 'work.ankitbawa@gmail.com'; //<-----Put Your email address here.
-$myemail = 'sahil28293@gmail.com'; //<-----Put Your email address here.
+$myemail = 'email@gmail.com'; //<-----Put Your email address here.
 if (empty($_POST['name']) || empty($_POST['email']) || empty($_POST['subject']) || empty($_POST['message'])) {
     $errors .= "\n Error: all fields are required";
 }
@@ -21,7 +20,7 @@ if (empty($errors)) {
     $headers .= "Reply-To: $email_address";
     mail($to, $email_subject, $email_body, $headers);
     //redirect to the 'thank you' page
-    //header('Location: ../index.html');
+    header('Location: ../ty.html');
 }
 ?>
 <?php
@@ -45,6 +44,6 @@ if (empty($errors)) {
     $headers .= "Reply-To: $email_address";
     mail($to, $email_subject, $email_body, $headers);
     //redirect to the 'thank you' page
-    //header('Location: ../index.html');
+    header('Location: ../ty.html');
 }
 ?>
